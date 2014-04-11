@@ -1,4 +1,3 @@
-Zabbix-PCS-Template
-===================
+Author: Sergey Bronnikov (estetus@gmail.com)
 
-Zabbix template for Parallels Cloud Server
+The template has been tested on Parallels Cloud Server 6.0
