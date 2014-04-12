@@ -90,7 +90,7 @@ The template has been tested on Parallels Cloud Server 6.0 and Zabbix 2.0.0.
 
 ### License, Authors, Copyright
 
-This template is distributed under the terms BSD license.
+This template is distributed under the terms of BSD license.
 
 Copyright (c) Sergey Bronnikov
 
