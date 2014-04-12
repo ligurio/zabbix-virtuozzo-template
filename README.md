@@ -51,6 +51,11 @@ The Parallels Cloud Server template supports all available PCS values provided b
 * service snmpd start
 * chkconfig snmpd --levels 2345 on
 
+### Installation
+
+1. Import **Zabbix_Parallels_Cloud_Server_Template.xml** file into Zabbix.
+2. Associate **Template SNMP OS Parallels Cloud Server** template to the host.
+
 ### Contributing to the Parallels Cloud Server Zabbix template
 
 To work on the `Zabbix-PCS-Template` plugin development, clone this repository:
