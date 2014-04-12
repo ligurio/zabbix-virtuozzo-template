@@ -1,4 +1,4 @@
-# Zabbix Template for Parallels Cloud Server
+## Zabbix Template for Parallels Cloud Server
 
 This is a template for [Zabbix](http://www.zabbix.com/),
 allowing to monitor servers with [Parallels Cloud Server](http://www.parallels.com/products/pcs/).
