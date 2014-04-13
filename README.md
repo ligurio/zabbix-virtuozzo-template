@@ -16,6 +16,7 @@ The Parallels Cloud Server template supports all available PCS values provided b
 * rmondVeMemoryTotal Counter64
 * rmondVeMemoryUsage Counter64
 * rmondVeSwapTotal Counter64
+* rmondVeSwapUsage Counter64
 * rmondVeCpuNumber INTEGER
 * rmondVeCpuLimit INTEGER
 * rmondVeCpuUnits INTEGER
