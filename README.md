@@ -9,43 +9,6 @@ read the official [Zabbix official documentation](https://www.zabbix.com/documen
 ### Features
 The Parallels Cloud Server template supports all available PCS values provided by SNMP.
 
-* rmondVeId STRING
-* rmondVeName STRING
-* rmondVeState INTEGER
-* rmondVePerfectNode STRING
-* rmondVeMemoryTotal Counter64
-* rmondVeMemoryUsage Counter64
-* rmondVeSwapTotal Counter64
-* rmondVeSwapUsage Counter64
-* rmondVeCpuNumber INTEGER
-* rmondVeCpuLimit INTEGER
-* rmondVeCpuUnits INTEGER
-* rmondVeCpuSystem INTEGER
-* rmondVeCpuUser INTEGER
-* rmondVeType INTEGER
-* rmondVeUuid STRING
-* rmondVeDiskName STRING
-* rmondVeDiskTotal Counter64
-* rmondVeDiskUsage Counter64
-* rmondVeDiskReadRequests Counter64
-* rmondVeDiskWriteRequests Counter64
-* rmondVeDiskReadBytes Counter64
-* rmondVeDiskWriteBytes Counter64
-* rmondVeDiskHash1 Counter32
-* rmondVeDiskHash2 Counter32
-* rmondVeNetworkInterface STRING
-* rmondVeNetworkInBytes Counter64
-* rmondVeNetworkOutBytes Counter64
-* rmondVeNetworkInPackets Counter64
-* rmondVeNetworkOutPackets Counter64
-* rmondVeNetworkMacAddress STRING
-* rmondLocalVeNumber INTEGER
-* rmondVeLimit INTEGER
-* rmondLicenseVeNumber INTEGER
-* rmondLicenseCtNumber INTEGER
-* rmondLicenseVmNumber INTEGER
-* rmondLicenseVmNumber
-
 ### How to setup SNMP in Parallels Cloud Server
 
 * yum install -y rmond
