@@ -86,7 +86,7 @@ please report it on the [IssueTracker](https://github.com/ligurio/Zabbix-PCS-Tem
 
 ### Requirements
 
-The template has been tested on Parallels Cloud Server 6.0 and Zabbix 2.0.0.
+The template has been tested on Parallels Cloud Server 6.0 and Zabbix 2.2.2.
 
 
 ### License, Authors, Copyright
