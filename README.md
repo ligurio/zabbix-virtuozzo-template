@@ -54,7 +54,7 @@ The template has been tested on Parallels Cloud Server 6.0 and Zabbix 2.2.2.
 
 ### License, Authors, Copyright
 
-This template is distributed under the terms of BSD license.
+This template is distributed under the terms of GPL v2 license.
 
 Copyright (c) Sergey Bronnikov
 
