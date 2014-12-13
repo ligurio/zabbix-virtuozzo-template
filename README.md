@@ -24,7 +24,7 @@ with gathering data with custom OID and
 service snmpd stop
 echo 'rouser pstorage_user priv' >> /etc/snmp/snmpd.conf
 echo 'extend  .1.3.6.1.4.1.2021.51  license pstorage -c STORAGE_NAME view-license | grep "status"' >> /etc/snmp/snmpd.conf
-echo  'createUser pstorage_user MD5 pstorage_password DES' >> /var/lib/snmp/snmpd.conf
+echo 'createUser pstorage_user MD5 pstorage_password DES' >> /var/lib/snmp/snmpd.conf
 service snmpd start 
 ```
 
