@@ -15,6 +15,22 @@ The Parallels Cloud Server template supports all available PCS values provided b
 * service snmpd start
 * chkconfig snmpd --levels 2345 on
 
+Unfortunately there is no possibility to monitor Parallels Cloud Storage
+via SNMP by default. But there is workaround (use it on your own risk)
+with gathering data with custom OID and
+[Parallels Cloud Storage command line tools](http://sp.parallels.com/products/pcs/documentation/):
+
+```
+service snmpd stop
+echo "rouser pstorage_user priv" >> /etc/snmp/snmpd.conf
+echo 'extend  .1.3.6.1.4.1.2021.51  license pstorage -c STORAGE_NAME view-license | grep "status"' >> /etc/snmp/snmpd.conf
+echo  createUser pstorage_user MD5 pstorage_password DES >> /var/lib/snmp/snmpd.conf
+service snmpd start 
+```
+
+where `pstorage_password` need at least 8 characters and
+`pstorage_user` consists only from characters.
+
 ### Installation
 
 1. Import **Zabbix_Parallels_Cloud_Server_Template.xml** file into Zabbix.
