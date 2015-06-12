@@ -11,9 +11,11 @@ The Virtuozzo template supports all available Virtuozzo values provided by SNMP.
 
 ### How to setup SNMP in Virtuozzo
 
+```
 * yum install -y rmond
 * service snmpd start
 * chkconfig snmpd --levels 2345 on
+```
 
 Unfortunately there is no possibility to monitor Parallels Cloud Storage
 via SNMP by default. But there is workaround (use it on your own risk)
@@ -33,7 +35,7 @@ where `pstorage_password` need at least 8 characters and
 
 ### Installation
 
-1. Import **Zabbix_Virtuozzo_Template.xml** file into Zabbix.
+1. Import **zabbix_virtuozzo_template.xml** file into Zabbix.
 2. Associate **Template SNMP OS Virtuozzo** template to the host.
 
 ### Contributing to the Virtuozzo Zabbix template
