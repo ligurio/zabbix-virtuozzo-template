@@ -1,15 +1,15 @@
-## Zabbix Template for Parallels Cloud Server
+## Zabbix Template for Virtuozzo
 
 This is a template for [Zabbix](http://www.zabbix.com/),
-allowing to monitor servers with [Parallels Cloud Server](http://www.parallels.com/products/pcs/).
+allowing to monitor servers with [Virtuozzo](http://www.odin.com/products/virtuozzo/).
 
 If you're just getting started with Zabbix, it is highly recommended that you
 read the official [Zabbix official documentation](https://www.zabbix.com/documentation/2.2/manual) first.
 
 ### Features
-The Parallels Cloud Server template supports all available PCS values provided by SNMP.
+The Virtuozzo template supports all available Virtuozzo values provided by SNMP.
 
-### How to setup SNMP in Parallels Cloud Server
+### How to setup SNMP in Virtuozzo
 
 * yum install -y rmond
 * service snmpd start
@@ -18,7 +18,7 @@ The Parallels Cloud Server template supports all available PCS values provided b
 Unfortunately there is no possibility to monitor Parallels Cloud Storage
 via SNMP by default. But there is workaround (use it on your own risk)
 with gathering data with custom OID and
-[Parallels Cloud Storage command line tools](http://sp.parallels.com/products/pcs/documentation/):
+[Virtuozzo Storage command line tools](http://www.odin.com/products/virtuozzo/):
 
 ```
 service snmpd stop
@@ -33,39 +33,39 @@ where `pstorage_password` need at least 8 characters and
 
 ### Installation
 
-1. Import **Zabbix_Parallels_Cloud_Server_Template.xml** file into Zabbix.
-2. Associate **Template SNMP OS Parallels Cloud Server** template to the host.
+1. Import **Zabbix_Virtuozzo_Template.xml** file into Zabbix.
+2. Associate **Template SNMP OS Virtuozzo** template to the host.
 
-### Contributing to the Parallels Cloud Server Zabbix template
+### Contributing to the Virtuozzo Zabbix template
 
-To work on the `Zabbix-PCS-Template` plugin development, clone this repository:
+To work on the `Zabbix-Virtuozzo-Template` plugin development, clone this repository:
 
 ```
-$ git clone https://github.com/ligurio/Zabbix-PCS-Template
-$ cd Zabbix-PCS-Template
+$ git clone https://github.com/ligurio/Zabbix-Virtuozzo-Template
+$ cd Zabbix-Virtuozzo-Template
 ```
 
 ### Sending a Pull Request
 If you're ready to send your changes, please follow the next steps:
 
-1. Fork the 'Zabbix-PCS-Template' repository and ad it as a new remote (`git add
+1. Fork the 'Zabbix-Virtuozzo-Template' repository and ad it as a new remote (`git add
 remote my-fork <fork_url>`)
 2. Create a branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am "Added a sweet feature"`)
 4. Push the branch to your fork (`git push fork my-new-feature`)
 5. Create a pull request from your `my-new-feature` branch into `master` of
-`Zabbix-PCS-Template` repo
+`Zabbix-Virtuozzo-Template` repo
 
 ### Getting Help
 Having problems while using the template? Ask your question to Zabbix forum:
 [Zabbix support forum](https://www.zabbix.com/forum/)
 
-If you get an error while using the Parallels provider or discover a bug,
-please report it on the [IssueTracker](https://github.com/ligurio/Zabbix-PCS-Template).
+If you get an error while using the Virtuozzo provider or discover a bug,
+please report it on the [IssueTracker](https://github.com/ligurio/Zabbix-Virtuozzo-Template).
 
 ### Requirements
 
-The template has been tested on Parallels Cloud Server 6.0 and Zabbix 2.2.2.
+The template has been tested on Virtuozzo 6.0 and Zabbix 2.2.2.
 
 
 ### License, Authors, Copyright
