@@ -1,15 +1,15 @@
 ## Zabbix Template for Virtuozzo
 
-This is a template for [Zabbix](http://www.zabbix.com/),
-allowing to monitor servers with [Virtuozzo](http://www.odin.com/products/virtuozzo/).
+This is a template for [Zabbix](http://www.zabbix.com/), allowing to monitor
+servers with [Virtuozzo](https://virtuozzo.com/products/virtuozzo/).
 
 If you're just getting started with Zabbix, it is highly recommended that you
-read the official [Zabbix official documentation](https://www.zabbix.com/documentation/2.2/manual) first.
+read the official [Zabbix official
+documentation](https://www.zabbix.com/documentation/2.2/manual) first.
 
-### Features
 The Virtuozzo template supports all available Virtuozzo values provided by SNMP.
 
-### How to setup SNMP in Virtuozzo
+### How to use
 
 ```
 * yum install -y rmond
@@ -17,10 +17,10 @@ The Virtuozzo template supports all available Virtuozzo values provided by SNMP.
 * chkconfig snmpd --levels 2345 on
 ```
 
-Unfortunately there is no possibility to monitor Parallels Cloud Storage
-via SNMP by default. But there is workaround (use it on your own risk)
-with gathering data with custom OID and
-[Virtuozzo Storage command line tools](http://www.odin.com/products/virtuozzo/):
+Unfortunately there is no possibility to monitor Virtuozzo via SNMP by default.
+But there is a workaround (use it on your own risk) with gathering data with
+custom OID and [Virtuozzo Command Line
+Reference](http://docs.virtuozzo.com/virtuozzo_7_command_line_reference/index.html):
 
 ```
 service snmpd stop
@@ -33,42 +33,12 @@ service snmpd start
 where `pstorage_password` need at least 8 characters and
 `pstorage_user` consists only from characters.
 
-### Installation
-
-1. Import **zabbix_virtuozzo_template.xml** file into Zabbix.
-2. Associate **Template SNMP OS Virtuozzo** template to the host.
-
-### Contributing to the Virtuozzo Zabbix template
-
-To work on the `Zabbix-Virtuozzo-Template` plugin development, clone this repository:
-
-```
-$ git clone https://github.com/ligurio/Zabbix-Virtuozzo-Template
-$ cd Zabbix-Virtuozzo-Template
-```
-
-### Sending a Pull Request
-If you're ready to send your changes, please follow the next steps:
-
-1. Fork the 'Zabbix-Virtuozzo-Template' repository and ad it as a new remote (`git add
-remote my-fork <fork_url>`)
-2. Create a branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am "Added a sweet feature"`)
-4. Push the branch to your fork (`git push fork my-new-feature`)
-5. Create a pull request from your `my-new-feature` branch into `master` of
-`Zabbix-Virtuozzo-Template` repo
-
-### Getting Help
-Having problems while using the template? Ask your question to Zabbix forum:
-[Zabbix support forum](https://www.zabbix.com/forum/)
-
-If you get an error while using the Virtuozzo provider or discover a bug,
-please report it on the [IssueTracker](https://github.com/ligurio/Zabbix-Virtuozzo-Template).
+Import **zabbix_virtuozzo_template.xml** file into Zabbix and associate
+**Template SNMP OS Virtuozzo** template to the host.
 
 ### Requirements
 
 The template has been tested on Virtuozzo 6.0 and Zabbix 2.2.2.
-
 
 ### License, Authors, Copyright
 
@@ -77,4 +47,3 @@ This template is distributed under the terms of BSD license.
 Copyright (c) Sergey Bronnikov
 
 Author: Sergey Bronnikov [@estet](https://twitter.com/estet) (estetus@gmail.com)
-
